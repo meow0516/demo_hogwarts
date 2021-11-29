@@ -1,20 +1,31 @@
 <template>
   <div class="introduction">
-    <input type="radio" id="text" value="text" v-model="dataType">
-    <label for="text">text</label>
+    <div>
+      <input type="radio" id="text" value="text" v-model="dataType">
+      <label for="text">以姓名搜尋</label>
 
-    <input type="text">
-    <input type="radio">
-    <select name="" id=""></select>
+      <input type="radio" id="radio" value="radio" v-model="dataType">
+      <label for="radio">以性別搜尋</label>
+
+      <input type="radio" id="selector" value="selector" v-model="dataType">
+      <label for="selector">以學院搜尋</label>
+    </div>
+
+    <search :data-type="dataType"/>
+
   </div>
 </template>
 
 <script>
+import search from '@/components/search.vue';
 export default {
   name: "introduction",
-  props: {
-    msg: String,
+  components:{
+    search
   },
+  data: ()=>({
+    dataType: 'text',
+  }),
 };
 </script>
 
