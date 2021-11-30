@@ -1,6 +1,6 @@
 <template>
   <div class="search-bar">
-    abc
+    {{ $store.state.searchResult }}
   </div>
 </template>
 

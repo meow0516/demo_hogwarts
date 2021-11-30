@@ -12,16 +12,18 @@
     </div>
 
     <search :data-type="dataType"/>
-
+    <searchresult/>
   </div>
 </template>
 
 <script>
 import search from '@/components/search.vue';
+import searchresult from '@/components/searchresult.vue'
 export default {
   name: "introduction",
   components:{
-    search
+    search,
+    searchresult
   },
   data: ()=>({
     dataType: 'text',
