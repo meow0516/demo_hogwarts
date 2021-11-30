@@ -3,6 +3,10 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <router-link to='/Gryffindor'>Gryffindor</router-link>
+      <router-link to='/Hufflepuff'>Hufflepuff</router-link>
+      <router-link to='/Ravenclaw'>Ravenclaw</router-link>
+      <router-link to='/Slytherin'>Slytherin</router-link>
     </div>
     <router-view />
   </div>
