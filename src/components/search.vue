@@ -44,6 +44,11 @@ export default {
       }
     }
   },
+  watch:{
+    dataType: function(){
+      this.searchInput = '';
+    }
+  }
 };
 </script>
 
