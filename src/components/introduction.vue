@@ -1,5 +1,6 @@
 <template>
   <div class="introduction">
+    {{ instruction }}
     <div>
       <input type="radio" id="text" value="text" v-model="dataType">
       <label for="text">以姓名搜尋</label>
@@ -28,7 +29,22 @@ export default {
   data: ()=>({
     dataType: 'text',
   }),
+
+  computed:{
+    instruction(){
+      if( this.dataType == 'text'){
+        return "輸入角色名稱"
+      }
+      else if(this.dataType == 'radio'){
+        return "選擇角色性別"
+      }
+      else{
+        return "拉選所屬學院"
+      }
+    }
+  }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
