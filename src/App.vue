@@ -31,7 +31,7 @@
 export default {
   mounted(){
     this.$store.dispatch('getList')
-    this.themeColor = this.$cookies.get('themeColor')
+    this.themeColor = this.$cookies.get('themeColor') || 'defaultTheme'
   },
   data: ()=>({
     themeColor:'defaultTheme',
