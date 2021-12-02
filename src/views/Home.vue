@@ -16,6 +16,12 @@ export default {
   components: {
     introduction,
   },
+  metaInfo:{
+    meta:[{
+      name: 'description',
+      content: 'Hogwarts info'
+    }]
+  }
 };
 </script>
 
