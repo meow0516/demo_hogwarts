@@ -54,5 +54,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.search-bar{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  .search-btn{
+    margin-left: 5px;
+  }
+  input, select, label{
+    font-size: 1.2em;
+  }
+}
 </style>
